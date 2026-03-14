@@ -1,0 +1,203 @@
+ Project Title 
+ Audible Insights: Intelligent Book 
+ Recommendations 
+ Skills tak e awa y From 
+ This Pr oject  Python scripting, data cleaning, Explor atory Data 
+ Analysis (ED A), Machine Learning,NLP , Streamlit, 
+ AWS deplo yment(optional) 
+ Domain 
+ Recommendation Systems 
+ Problem Statement 
+ Design a book r ecommendation system that r etrie ves book details fr om giv en datasets, 
+ processes and cleans the data befor e applying NLP techniques and clustering methods 
+ and builds multiple r ecommendation models. The ﬁnal application will allow users t o 
+ sear ch for book r ecommendations using a user-friendly inter face deplo yed with 
+ Streamlit and hosted on A WS(optional). 
+ Business Use Cases 
+ Personaliz ed Reading Experience: 
+ ●  Help r eaders disco ver books tailor ed to their pr eferences based on their r eading 
+ history, genr es, or authors. 
+ Enhanced Libr ary Systems: 
+ ●  Libraries and bookst ores can use r ecommendations t o impr ove book 
+ borrowing/sales based on popular or similar r eads. 
+ Impr oved A uthor/Publisher T argeting: 
+ ●  Provide authors and publishers with data-driv en insights about popular genr es, 
+ reader pr eferences, and high-demand books. 
+
+ Reader Engagement: 
+ ●  Increase r eader engagement b y suggesting tr ending or highly r ated books acr oss 
+ different categories. 
+ Approach 
+ 1.  Data Pr epar ation: 
+ ○  Use two pr ovided datasets containing book information, r atings, and user 
+ inter actions. 
+ ○  Merge the datasets based on common attributes lik e book names and 
+ authors. 
+ 2. Data Cleaning: 
+ ○  Handle missing or inconsistent data b y imputing or r emo ving incomplete 
+ recor ds. 
+ ○  Standar dize formats for ﬁelds lik e genr es and r atings. 
+ ○  Remo ve duplicate r ecor ds. 
+ 3. Explor atory Data A nalysis (ED A): 
+ ○  Analyz e book genr es, ratings distribution, and other tr ends. 
+ ○  Visualiz e key insights lik e the most popular genr es, top-rated books, and 
+ trends in publication y ears. 
+ 4. NLP and Clustering: 
+ ○  Apply NLP techniques t o extr act f eatur es fr om book titles, descriptions, or 
+ reviews. 
+ ○  Use clustering algorithms (e.g., K -means or DBSCAN) t o group books 
+ based on similarities in f eatur es. 
+ 5. Recommendation System De velopment: 
+ ○  Build r ecommendation models using: 
+ ■  Content-Based Filtering (based on book f eatur es lik e genr es, 
+ descriptions, etc.) 
+ ■  Clustering-Based Recommendations 
+ ■  Hybrid Appr oaches 
+
+ ○  Compar e these models using e valuation metrics such as pr ecision, r ecall 
+ etc. 
+ 6. Application De velopment: 
+ ○  Build a user inter face using Str eamlit t o: 
+ ■  Input user pr eferences (e.g., fa vorite genr es or books). 
+ ■  Displa y personaliz ed book r ecommendations. 
+ ■  Visualization and ED A. 
+ 7.  Deplo yment(optional): 
+ ○  Deplo y the application t o AWS, ensuring accessibility and scalability . 
+ Data Flow and Architecture 
+ 1.  Data Pr epar ation: 
+ ○  Merge and clean the pr ovided datasets. 
+ ○  Store the pr ocessed data locally or in an A WS S3 buck et. 
+ 2.  Processing Pipeline: 
+ ○  Clean and pr eprocess the data using P ython libr aries lik e pandas. 
+ ○  Perform f eatur e engineering for r ecommendation models. 
+ 3.  Model T raining: 
+ ○  Develop models using libr aries lik e scikit-learn or Surprise. 
+ ○  Save trained models for deplo yment. 
+ 4.  Deplo yment: 
+ ○  Use Str eamlit t o create a user-friendly fr ont end. 
+ ○  Host the application on A WS EC2 or Elastic Beanstalk. 
+ Datasets: 
+ Dataset 1:  Audible_Catlog.csv 
+ Dataset 2:  Audible_Catlog_Adv anced_F eatur es.csv 
+ Dataset Explanation: 
+ Dataset 1:  This dataset contains detailed information  about v arious books, including: 
+
+ ●  Book Name:  Title of the book. 
+ ●  Author:  Name of the author . 
+ ●  Rating:  Average r ating of the book. 
+ ●  Number of Re views:  Count of user r eviews. 
+ ●  Price:  Cost of the book. 
+ ●  Description:  Brief description or synopsis of the  book. 
+ ●  Listening Time:  For audiobooks, t otal dur ation. 
+ ●  Ranks and Genr e:  Rankings acr oss v arious categories  and genr es. 
+ Dataset 2: This dataset pr ovides complementar y information about books, including: 
+ ●  Book Name:  Title of the book. 
+ ●  Author:  Name of the author . 
+ ●  Rating:  Average r ating of the book. 
+ ●  Number of Re views:  Count of user r eviews. 
+ ●  Price:  Cost of the book. 
+ Explor atory Data A nalysis (ED A) 
+ Analyz e trends and insights in the dataset, including: 
+ ●  Distribution of r atings acr oss genr es. 
+ ●  Most common genr es and authors. 
+ ●  Relationship between book r atings and r eview counts. 
+ ●  Trends in publication y ears. 
+ Key Visualizations: 
+ ●  Bar char ts for popular genr es. 
+ ●  Heatmaps t o visualiz e corr elations (e.g., r atings and r eviews). 
+ ●  Line char ts for publication tr ends o ver time. 
+ Questions t o Be A nswer ed: 
+ Easy Le vel: 
+ 1.  What ar e the most popular genr es in the dataset? 
+ 2.  Which authors ha ve the highest-r ated books? 
+ 3.  What is the a verage r ating distribution acr oss books? 
+ 4.  Are ther e trends in publication y ears for popular books? 
+
+ 5.  How do r atings v ary between books with diff erent r eview counts? 
+ Medium Le vel (Combination of Diff erent T ables/Models): 
+ 1.  Which books ar e frequently cluster ed together based on descriptions? 
+ 2.  How does genr e similarity aff ect book r ecommendations? 
+ 3.  What is the eff ect of author popularity on book r atings? 
+ 4.  Which combination of f eatur es pr ovides the most accur ate r ecommendations? 
+ Scenario Based: 
+ 1.  A new user lik es science ﬁction books. Which t op 5 books should be 
+ recommended? 
+ 2.  For a user who has pr eviously r ated thrillers highly , recommend similar books. 
+ 3.  Identify books that ar e highly r ated but ha ve low popularity t o recommend hidden 
+ gems. 
+ You can answer the abo ve questions and also do y our own analysis. 
+ Results 
+ By the end of this pr oject, learners will achie ve: 
+ 1.  A mer ged and cleaned dataset r eady for analysis and modeling. 
+ 2.  Extracted text f eatur es using NLP and cluster ed books based on similarities. 
+ 3.  Multiple r ecommendation models de veloped and e valuated. 
+ 4.  A functional r ecommendation system accessible via a Str eamlit inter face. 
+ 5.  A deplo yed application hosted on A WS. 
+ Project Evaluation Metrics: 
+ Data Cleaning Pr ocess: 
+ ●  Evaluate how missing data, duplicates, and inconsistencies ar e handled. 
+ Model P erformance: 
+ ●  Assess r ecommendation accur acy using metrics lik e RMSE, pr ecision, and r ecall. 
+ Application F unctionality: 
+
+ ●  Ensur e the Str eamlit inter face is user-friendly and r esponsiv e. 
+ Deplo yment Quality: 
+ ●  Verify the application ’s accessibility and scalability on A WS. 
+ Technical Tags:  Python, Machine Learning, Recommendation  Systems, NLP , 
+ Clustering,Str eamlit, A WS Deplo yment,Recommendation Systems 
+ Deliverables: 
+ Data Pr epar ation: 
+ ●  Evaluate how well the datasets ar e mer ged and cleaned. 
+ NLP and Clustering: 
+ ●  Assess the quality of f eatur e extr action and clustering methods. 
+ Model P erformance: 
+ ●  Evaluate r ecommendation accur acy using metrics lik e precision, r ecall, and 
+ RMSE. 
+ Application F unctionality: 
+ ●  Ensur e the Str eamlit inter face is user-friendly and r esponsiv e. 
+ Deplo yment Quality: 
+ ●  Verify the application ’s accessibility and scalability on A WS. 
+ Timeline: 
+ NOTE (for batch DS-WD-E-B15): Timeline for this project has been given 3 
+ weeks (i.e. deadline 10th Feb), kindly give preference to your ﬁnal project, 
+
+ complete and submit your ﬁnal project and then you can start working on this 
+ project. 
+ References: 
+ Project Liv e Evaluation Metrics Project Liv e Evaluation
+ EDA Guide Explor atory Data Analysis (ED A) Guide
+ Capst one Explanation Guideline Capst one Explanation Guideline
+ GitHub Ref erence How t o Use GitHub.pptx
+ AWS r ecor dings AWS
+ Streamlit r ecor dings (English) Special session for STREAMLI T(11/…
+ Streamlit r ecor dings (T amil)  https:/ /us06web.z oom.us/r ec/shar e/JT r7 
+ DywhE1-SarjyIHBSCn4qnl7_uvJH6IGk06q 
+ AlkE0Ny1o_r qcq5FRFK uo93dm.iyM2o6l0 
+ h9aTUkNE 
+Streamlit - T amil
+ Streamlit documentation  Install Streamlit 
+ str_app.py 
+Streamlit App on Streamlit Cloud
+ Project Orientation (English) Project Orientation Session : A udible…
+
+ Project Orientation (T amil) 
+ PROJECT DOUBT CLARIFICA TION SESSION ( PROJECT AND CLASS DOUBTS) 
+ About Session:  The Project Doubt Clarification Session  is a helpful resource for resolving questions 
+ and concerns about projects and class topics. It provides support in understanding project requirements, 
+ addressing code issues, and clarifying class concepts. The session aims to enhance comprehension and 
+ provide guidance to overcome challenges effectively. 
+ Note: Book the slot at least before 12:00 Pm on the same day 
+ Timing: Monday-Saturday (4:00PM to 5:00PM) 
+ Booking link :  https://forms.gle/XC553oSbMJ2Gcfug9 
+ LIVE EV ALUA TION SESSION (CAPST ONE AND FINAL PROJECT) 
+ About Session:  The Live Evaluation Session for Capstone  and Final Projects allows participants to 
+ showcase their projects and receive real-time feedback for improvement. It assesses project quality and 
+ provides an opportunity for discussion and evaluation. 
+ Note: This form will Open only on Saturday (after 2 PM ) and Sunday on Every Week 
+ Timing: 
+ For DS and AIML 
+ Monday-Saturday (05:30PM to 07:00PM) 
+ Booking link :  https://forms.gle/1m2Gsr o41fLtZurRA 
+ Evaluation Metrics  :  Project Live Evaluation 
+ Project Created By  Verified By  Approved By 
+ Vinodhini Nehlath Harmain Nehlath Harmain
