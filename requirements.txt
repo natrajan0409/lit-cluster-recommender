@@ -17,6 +17,9 @@ openpyxl>=3.1.0  # For Excel file support
 xlrd>=2.0.0      # For reading older Excel formats
 python-Levenshtein>=0.20.0 # Faster fuzzy matching
 
+# Machine Learning
+scikit-learn>=1.3.0  # For TF-IDF, cosine similarity, and DBSCAN clustering
+
 # Optional: For statistical analysis
 scipy>=1.10.0
 statsmodels>=0.14.0
